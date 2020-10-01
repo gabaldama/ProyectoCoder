@@ -27,7 +27,7 @@ html, body {
 
           &.intro {
             color: $blanco;
-            -webkit-text-stroke: 2px $gray;
+            -webkit-text-stroke: 2px $topo;
             font-family: $titulo-header;
             position: absolute;
             top: 0px;
@@ -143,15 +143,17 @@ html, body {
   }
 /* main index*/
 .card-post {
-   
+   h6 {
+     color: $salmon;
+   }
   .book {
     text-align: center;
     width: 30%;
    }
    .btn-indexCard {
     color: $topo;
-    background-color: $blanco;
-    border-color: $salmon;
+    background-color: $salmon;
+    border-color: $blanco;
   }
    .soft-colour { 
     border: none;
@@ -226,28 +228,25 @@ html, body {
 
 
 /* Formulario */
-
-div .fdoForm {
+ .fdoForm {
   
   .espacioForm {
-    height: 20vh;
+    height: 3vh;
           
           @media only screen and (min-width: 576px) {
             height: 0vh;
             }
           @media only screen and (min-width: 768px) {
-            height: 16vh;
+            height: 0vh;
           }
           @media only screen and (min-width: 992px) {
             height: 18vh;
           }
           @media only screen and (min-width: 1200px) {
-            height: 20vh;
+            height: 30vh;
           }
   }
-  .formSmall {
-    height: 40vh;
-  }
+  
   
   .contactame { 
     font-family:$tituloSeccion;
@@ -260,14 +259,12 @@ div .fdoForm {
   }
   .bigicon {
     font-size: 2rem;
-    color: #b0d6ba;
+    color: $blueContacto;
   }
-  .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
-    background-color: #b0d6ba;  
-    color: black;
-   }
-.textoRadio {color: black;}
-.btnEnviar { background-color: #c1f5cf;}
+ 
+.btnEnviar { 
+  background-color: $blueContacto;
+color: $blanco;}
 }
 
 /* footer index*/
