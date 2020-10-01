@@ -65,49 +65,106 @@
     <body> 
       <div class="container-fluid">
         <div class="container">
-           <div class="row mt-5 fdoForm">
-               <div class="col-sm-12 col-lg-7">                                         
-                   <fieldset>
-                       <legend class="contactame p-2 m-2 text-center">Contactame</legend>
-                           <form action="gracias.html" method="POST" enctype="application/x-www-form-urlencoded">
-                               <div class="fdoForm p-4"> 
-                                   <label for="nombre_y_apellido"><i class="fa fa-user bigicon"></i></label> 
-                                   <input class="form-control" type="text" name="nombre_y_apellido" placeholder="Nombre y apellido">
-                                   <br>
-                                   <label for="correo_electronico"><i class="fa fa-envelope bigicon"></i></label>
-                                   <input class="form-control" type="text" name="correo_electronico" placeholder="E-mail">
-                                   <br>
-                                   <div class="textoRadio"> 
-                                   <div class="custom-control custom-radio  ">
-                                       <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                       <label class="custom-control-label" for="customRadio1">Soy autor</label>
-                                   </div>
-                                   <div class="custom-control custom-radio">
-                                       <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                       <label class="custom-control-label" for="customRadio2">Soy una editorial</label>
-                                   </div>
-                                   <div class="custom-control custom-radio">
-                                       <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-                                       <label class="custom-control-label" for="customRadio3">Soy lectora/or</label>
-                                   </div>
-                                   </div>
-                                   <br>
-                                   <label for="mensaje"><i class="fa fa-pencil-square-o bigicon align-middle"></i></label>
-                                   <textarea class="col-11 align-middle rounded" name="mensaje" placeholder="Dejame tu mensaje"></textarea>
-                                   <br>
-                                   <br>
-                                   <div class="text-center "> 
-                                       <button type="submit" class="btn btnEnviar mb-2">Enviar</button>
-                                       <button type="reset" class="btn btnEnviar mb-2">Borrar</button>                       
-                   </div>
-                               </div>
-                           </form>
-                   </fieldset>               
-               </div>
-               <div class="col-lg-5 mt-5 p-5">
-                   <img src="images_1/seccion.jpg" class="img-fluid" alt="Responsive image">
-               </div>
-           </div>          
+            <div class="row mt-5 mb-3">
+                <div class="col-12">
+                    <h2 class="tituloSeccion">Contactame!</h2>
+                </div>
+            </div>
+           <div class="row  fdoForm">
+                <div class="col-sm-12 d-md-none">   
+                    <fieldset>
+                        <form action="gracias.html" method="POST" enctype="application/x-www-form-urlencoded">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-user bigicon"></i></span>
+                                        </div>
+                                        <label for="nombre_y_apellido"></label> 
+                                        <input class="form-control" type="text"name="nombre_y_apellido" placeholder="Nombre y apellido" readonly>                                    
+                                    </div>
+                                    <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-envelope bigicon"></i></span>
+                                    </div>
+                                        <label for="correo_electronico"></label> 
+                                        <input class="form-control" type="text" name="correo_electronico" placeholder="E-mail" readonly>                                    
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <select name="publico" class="custom-select">
+                                        <option selected>Soy...</option>
+                                        <option value="1">Autor</option>
+                                        <option value="2">Lector</option>
+                                        <option value="3">Una editorial</option>
+                                        <option value="3">Quiero publicitar</option>
+                                        </select>  
+                                    </div> 
+                                    <div class="input-group mb-3">
+                                        <label for="mensaje"><i class="fa fa-pencil-square-o bigicon align-middle"></i></label>
+                                        <textarea class="col-12 align-middle rounded" name="mensaje" placeholder="Dejame tu mensaje"></textarea>
+                                    </div> 
+                                    <div class="text-center "> 
+                                        <button type="submit" class="btn btnEnviar mb-2">Enviar</button>
+                                        <button type="reset" class="btn btnEnviar mb-2">Borrar</button>                       
+                                    </div> 
+                                </div>
+                            </div> 
+                        </form>
+                    </fieldset>   
+                </div> 
+                <div class="d-none d-md-block col-12"> 
+                    <img class="card-img" src="images_1/contacto.jpg" alt="Card image">
+                    <div class="card-img-overlay ">
+                        <div class="row">
+                            <div class="col-12 col-md-8 col-lg-6">
+                                <fieldset>
+                                    <form action="gracias.html" method="POST" enctype="application/x-www-form-urlencoded">
+                                        <div class="row">
+                                            <div class="col-12 d-md-none d-lg-block espacioForm"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-10 m-5">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fa fa-user bigicon"></i></span>
+                                                    </div>
+                                                    <label for="nombre_y_apellido"></label> 
+                                                    <input class="form-control" type="text"name="nombre_y_apellido" placeholder="Nombre y apellido" readonly>                                    
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fa fa-envelope bigicon"></i></span>
+                                                </div>
+                                                    <label for="correo_electronico"></label> 
+                                                    <input class="form-control" type="text" name="correo_electronico" placeholder="E-mail" readonly>                                    
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                    <select name="publico" class="custom-select">
+                                                    <option selected>Soy...</option>
+                                                    <option value="1">Autor</option>
+                                                    <option value="2">Lector</option>
+                                                    <option value="3">Una editorial</option>
+                                                    <option value="3">Quiero publicitar</option>
+                                                    </select>  
+                                                </div> 
+                                                <div class="input-group mb-3">
+                                                    <label for="mensaje"><i class="fa fa-pencil-square-o bigicon align-middle"></i></label>
+                                                    <textarea class="col-12 align-middle rounded p-lg-5" name="mensaje" placeholder="Dejame tu mensaje"></textarea>
+                                                </div> 
+                                                <div class="text-center "> 
+                                                    <button type="submit" class="btn btnEnviar mb-2">Enviar</button>
+                                                    <button type="reset" class="btn btnEnviar mb-2">Borrar</button>                       
+                                                </div> 
+                                            </div>
+                                        </div> 
+                                    </form>
+                                </fieldset>  
+                            </div>
+                        </div>
+                    </div>
+            </div>
+               
+           </div><!-- cierra row fdoForm -->          
         </div><!-- cierra container -->
       </div> <!-- cierra grilla -->
       
