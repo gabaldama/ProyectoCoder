@@ -159,6 +159,72 @@ html, body {
     background-color: #c1f5cf;
     opacity: 1;}
 }
+/* Resenas */
+.titulo {
+  .tituloResena {
+    font-family: $tituloResena;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: $topo;
+    padding: 2%;
+    position: relative;
+    top: -20px;
+    
+       @media only screen and (min-width: 375px)  {
+             font-size: 1.7rem;
+             top: -28px;
+        }
+        @media only screen and (min-width: 576px) {
+          font-size: 2rem;
+          top: -35px;
+        }
+        @media only screen and (min-width: 768px) {
+          font-size: 3rem;
+          top: -50px;
+        }
+        @media only screen and (min-width: 992px) {
+          font-size: 3rem;
+          top: -48px;
+        }
+        @media only screen and (min-width: 1200px) {
+          font-size: 3rem;
+          top: -52px;
+        }
+  }     
+  .titulo-bg {
+    background-color: $agua;
+    height: 10px;
+  
+        @media only screen and (min-width: 768px)  {
+          height: 14px;
+        }
+ }
+ .tituloAutor {
+  position: relative;
+  top: -28px;
+      @media only screen and (min-width: 576px)  {
+      top: -60px;
+      }
+ }
+}
+.card {
+  &.sinopsis {
+    background: linear-gradient(to left, $gray, $blanco);
+    opacity: 0.9;
+  }
+
+}
+  
+.table .thead-light th {
+  color: $black;
+  font-size: $main-font;
+  background-color:$agua;
+  border-color: $gray;
+} 
+  
+
+
+
 /* Formulario */
 
 div .fdoForm {
